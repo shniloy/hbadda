@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script type="module" src="movie-detail.js" defer></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Movie Detail Section -->
+    <div class="container mx-auto p-4">
+        <div id="movie-detail" class="bg-white p-4 rounded-lg shadow-lg">
+            <!-- Movie iframe (Trailer) -->
+            <div id="movie-iframe" class="mb-6">
+                <!-- Trailer iframe will be injected here -->
+            </div>
+
+            <!-- Movie Details -->
+            <div>
+                <h1 id="movie-title" class="text-2xl font-bold mb-2 text-gray-800">Movie Title</h1>
+                <p id="movie-rating" class="text-lg text-yellow-500 mb-4">IMDb Rating: 8.0</p>
+                <p><strong>Writer:</strong> <span id="movie-writer">Writer Name</span></p>
+                <p><strong>Director:</strong> <span id="movie-director">Director Name</span></p>
+                <p><strong>Actors:</strong> <span id="movie-actors">Actor Names</span></p>
+                <p><strong>Country:</strong> <span id="movie-country">Country Name</span></p>
+                <p><strong>Plot:</strong> <span id="movie-plot">This is a short plot description.</span></p>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="mt-8">
+            <a href="index.html" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Back to All Movies</a>
+        </div>
+    </div>
+
+</body>
+</html>
